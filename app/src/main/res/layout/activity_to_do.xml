@@ -43,31 +43,37 @@ tools:context=".ToDoActivity">
         android:layout_width="402dp"
         android:layout_height="721dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/addToDoListItem"
-
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="26dp"
-            android:background="@color/icon"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_white_add"
-            app:shapeAppearanceOverlay="@style/ImageStyle_Circle" />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+
+          >
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/todoRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="143dp" />
-        </RelativeLayout>
+                android:layout_height="480dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="169dp" />
 
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/addToDoListItem"
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="97dp"
+                android:background="@color/icon"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_white_add"
+                app:shapeAppearanceOverlay="@style/ImageStyle_Circle" />
+
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
