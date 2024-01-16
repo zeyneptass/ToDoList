@@ -87,7 +87,7 @@ class ProfileActivity : AppCompatActivity() {
 
     fun goToFamilyToDoList(view: View) {
         Toast.makeText(this,"You are redirected to the family to do list page",Toast.LENGTH_SHORT).show()
-        val intent = Intent(this,ToDoActivity::class.java)
+        val intent = Intent(this,FamilyToDoList::class.java)
         startActivity(intent)
     }
 
